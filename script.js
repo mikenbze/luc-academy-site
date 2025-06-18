@@ -63,4 +63,3 @@ renderEvents();
 searchInput.addEventListener('input', (e) => {
   renderEvents(e.target.value);
 });
-
