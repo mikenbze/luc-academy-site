@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LUC Academy</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Donate</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Welcome to LUC Academy</h1>
+    <p>Where faith meets learning excellence</p>
+  </section>
+
+  <!-- Why Choose Section -->
+  <section class="why-choose">
+    <h2>Why Choose LUC?</h2>
+    <ul>
+      <li>Values-driven education</li>
+      <li>Experienced, caring staff</li>
+      <li>Modern learning facilities</li>
+    </ul>
+  </section>
+
+   <!-- Donation Form -->
+<section class="donation-form">
+  <h2>Support Our Mission</h2>
+  <form id="donationForm">
+    <input type="text" id="name" placeholder="Your Name" required />
+    <input type="number" id="amount" placeholder="Amount (KES)" required />
+    <button type="submit">Donate Now</button>
+  </form>
+</section>
+
+<section class="events">
+  <h2>Upcoming Events</h2>
+  <input type="text" id="searchEvent" placeholder="Search events..." />
+  <ul id="eventsList"></ul>
+</section>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

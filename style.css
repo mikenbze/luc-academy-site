@@ -1,0 +1,165 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  background-color: #f7f9fc;
+  color: #333;
+  padding: 20px;
+}
+
+/* Navigation Bar */
+nav {
+  background-color: #2e3b55;
+  padding: 10px 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  background-image: url('https://images.unsplash.com/photo-1607746882042-944635dfe10e?fit=crop&w=1600&q=80');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+/* Why Choose Section */
+.why-choose {
+  margin: 40px 0;
+  text-align: center;
+}
+
+.why-choose h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #2e3b55;
+}
+
+.why-choose ul {
+  list-style: none;
+}
+
+.why-choose li {
+  margin: 10px 0;
+}
+
+/* Donate Button */
+.donate {
+  text-align: center;
+  margin-top: 30px;
+}
+
+#donateBtn {
+  background-color: #ff5a5f;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#donateBtn:hover {
+  background-color: #e04e50;
+}
+
+.donation-form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 400px;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.donation-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2e3b55;
+}
+
+.donation-form input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.donation-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.donation-form button:hover {
+  background-color: #218838;
+}
+
+.events {
+  max-width: 600px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.events h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#searchEvent {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#eventsList {
+  list-style: none;
+  padding-left: 0;
+}
+
+#eventsList li {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+
