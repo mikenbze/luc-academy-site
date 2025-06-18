@@ -5,11 +5,27 @@ document.getElementById('donationForm').addEventListener('submit', function (e) 
   const amount = document.getElementById('amount').value;
 
   if (name && amount) {
-    alert(`Thank you, ${name}, for donating KES ${amount}!`);
-    document.getElementById('donationForm').reset();
-  } else {
-    alert('Please fill in all fields.');
-  }
+  fetch('https://luc-backend.onrender.com/donate', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ name, amount })
+  })
+    .then(response => response.json())
+    .then(data => {
+      console.log('Server response:', data);
+      alert(data.message);
+      document.getElementById('donationForm').reset();
+    })
+    .catch(error => {
+      console.error('Fetch error:', error);
+      alert('Something went wrong. Please try again later.');
+    });
+} else {
+  alert('Please fill in all fields.');
+}
+
 });
 
 const events = [
